@@ -1,0 +1,203 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 5,
+            "value": "# every feature file starts with feature: and then name of feature file"
+          },
+          {
+            "line": 6,
+            "value": "# Every scenario start with scenario : and then the name of the test case we want to automate"
+          },
+          {
+            "line": 7,
+            "value": "# Gherkin keywords are Given and When Then"
+          },
+          {
+            "line": 8,
+            "value": "# Given is a precondition"
+          },
+          {
+            "line": 9,
+            "value": "# When is an action taken"
+          },
+          {
+            "line": 10,
+            "value": "# Then is an expected result (we write for validation)"
+          },
+          {
+            "line": 11,
+            "value": "# And is repeating an action or can be used follwing Given keyworkd as well"
+          },
+          {
+            "line": 12,
+            "value": "# But is used for negative scenarios verfication"
+          }
+        ],
+        "line": 14,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2664894700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on Retail website",
+            "match": {
+              "location": "LoginTestStepDefinition.user_is_on_Retail_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2922339200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.beforeHooks(Scenario)"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Register an Account Test case",
+        "description": "",
+        "id": "retail-website-features;register-an-account-test-case",
+        "after": [
+          {
+            "result": {
+              "duration": 890299300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Initializer.afterHooks(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 806018800,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User click on MyAccount",
+            "match": {
+              "location": "RetailPageTestStepDefinitions.user_click_on_MyAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28400,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User click on Register option",
+            "match": {
+              "location": "RetailPageTestStepDefinitions.user_click_on_Register_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1099000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User fill the registration from with Below information",
+            "match": {
+              "location": "RetailPageTestStepDefinitions.user_fill_the_registration_from_with_Below_information(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "Telephone",
+                  "password",
+                  "confirmpPassword",
+                  "subscribe"
+                ],
+                "line": 49
+              },
+              {
+                "cells": [
+                  "Alex",
+                  "Jason",
+                  "Jt@gmail.com",
+                  "1012026633",
+                  "test",
+                  "test",
+                  "no"
+                ],
+                "line": 50
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "User accept the privacy and policy",
+            "match": {
+              "location": "RetailPageTestStepDefinitions.user_accept_the_privacy_and_policy()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34900,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "User click on Continue button",
+            "match": {
+              "location": "RetailPageTestStepDefinitions.user_click_on_Continue_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31400,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "User should be registered in Retail Website",
+            "match": {
+              "location": "RetailPageTestStepDefinitions.user_should_be_registered_in_Retail_Website()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 42,
+            "name": "@RegTest"
+          }
+        ]
+      }
+    ],
+    "name": "Retail Website Features",
+    "description": "",
+    "id": "retail-website-features",
+    "keyword": "Feature",
+    "uri": "Features/RetailPage.feature"
+  }
+]
