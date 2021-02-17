@@ -10,7 +10,7 @@ import core.Base;
 public class LoginPageObj extends Base {
 
 	// create a constructor for this page and this applies to all page objects
-// this is practice change
+// This is the second change on class practice
 	public LoginPageObj() {
 		// we will use initElements method of PageFactory class to initialize the
 		// Webelements of UI
